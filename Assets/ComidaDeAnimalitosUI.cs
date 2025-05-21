@@ -50,15 +50,12 @@ public class ComidaDeAnimalitosUI : MonoBehaviour
         if (codigo == "G")
         {
             comidaAnimalIndicado = comidaGatos;
-            return;
         } else if (codigo == "PP")
         {
             comidaAnimalIndicado = comidaPerrosGrandes;
-            return;
         } else if (codigo == "PG")
         {
             comidaAnimalIndicado = comidaPerrosPequeños;
-            return;
         } else
         {
             txtResultado.text = "Código no válido";
@@ -68,6 +65,6 @@ public class ComidaDeAnimalitosUI : MonoBehaviour
         cantComidaTotal = comidaAnimalIndicado * cantDias;
         precioTotal = cantComidaTotal / 100 * precioPorCienGramos;
 
-        txtResultado.text = "Para ese período se necesitan" + cantComidaTotal + " gramos de alimento, que saldrán $" + precioTotal;
+        txtResultado.text = "Para ese período se necesitan " + cantComidaTotal + " gramos de alimento, que saldrán $" + precioTotal;
     }
 }
